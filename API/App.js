@@ -55,6 +55,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/sendmoves', (req, res) => {
+    console.log(req.body);
     console.log("POST moves");
     movesQue = []
     for(let move of req.body.moves){

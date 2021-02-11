@@ -1,4 +1,7 @@
 import queue
+import requests
+
+lijst = []
 
 def printMaze(maze, path=""):
     for x, pos in enumerate(maze[0]):
@@ -58,7 +61,7 @@ def valid(maze, moves):
     return True
 
 def findEnd(maze, moves):
-    data = []
+    global lijst
 
     for x, pos in enumerate(maze[0]):
         if pos == "O":
@@ -84,9 +87,10 @@ def findEnd(maze, moves):
 
         for num, move in enumerate(moves, start=1):
           #print(move)
-          data.append({"OrderNr": num,"Direction": move,"Afstand" : 5})
+          lijst.append({"OrderNr": num,"Direction": move,"Afstand" : 5})
 
-        #print(data)  
+        print(lijst)  
+        requests.post("http://127.0.0.1:3000/sendmoves" , json= {"moves": lijst})
 
         printMaze(maze, moves)
         return True
@@ -172,6 +176,7 @@ while stop:
 
         if x == "y":
             solve(map)
+            
             printLinebreak()
 
 
