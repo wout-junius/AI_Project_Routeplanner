@@ -1,0 +1,26 @@
+{
+  "name": "ai_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wout-junius/AI_Essentials_API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wout-junius/AI_Essentials_API/issues"
+  },
+  "homepage": "https://github.com/wout-junius/AI_Essentials_API#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "color-themes-for-google-code-prettify": "^2.0.4",
+    "express": "^4.17.1",
+    "node": "^15.2.1",
+    "node-webhooks": "^1.4.2"
+  }
+}

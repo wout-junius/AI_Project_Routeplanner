@@ -1,0 +1,12 @@
+RobotIP = "192.168.0.60"
+Port1 = 10001
+PORT2 = 10002
+CameraIP = "192.168.0.65"
+GPSPort = 8081
+CameraPWD = "drrobot"
+CameraUser = "root"
+IMUIP = "192.168.0.61"
+IMUPort = 10001
+Wheel_CNT = 300
+Wheel_R = 0.135
+Wheel_DIS = 0.52
